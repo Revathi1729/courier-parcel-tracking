@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Tracking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Update Parcel Tracking</h1>
+</header>
+
+<nav>
+     <a href="index.html">Home</a>
+        <a href="customers.html">Customers</a>
+        <a href="book-parcel.html">Book Parcel</a>
+        <a href="parcels.html">View Parcels</a>
+        <a href="tracking.html">Track Parcel</a>
+         <a href="update-tracking.html">Update Tracking</a>
+        <a href="payments.html">Payments</a>
+</nav>
+
+<div class="form-container">
+    <h2>Update Parcel Status</h2>
+
+    <form id="updateTrackingForm">
+
+        <label>Parcel ID</label>
+        <select id="updateParcelId" required>
+            <option value="">Select Parcel</option>
+        </select>
+
+        <label>Current Location</label>
+        <input type="text" id="current_location" required>
+
+        <label>Tracking Status</label>
+        <select id="tracking_status" required>
+            <option value="">Select Status</option>
+            <option value="Booked">Booked</option>
+            <option value="In Transit">In Transit</option>
+            <option value="Out for Delivery">Out for Delivery</option>
+            <option value="Delivered">Delivered</option>
+        </select>
+
+        <label>Remarks</label>
+        <textarea id="remarks"></textarea>
+
+        <button type="submit">Save Update</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Parcel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Courier and Parcel Tracking System</h1>
+    <p>Track Your Parcel</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+        <a href="customers.html">Customers</a>
+        <a href="book-parcel.html">Book Parcel</a>
+        <a href="parcels.html">View Parcels</a>
+        <a href="tracking.html">Track Parcel</a>
+         <a href="update-tracking.html">Update Tracking</a>
+        <a href="payments.html">Payments</a>
+</nav>
+
+<div class="form-container">
+    <h2>Track Parcel</h2>
+
+    <form id="trackingSearchForm">
+        <label>Parcel ID</label>
+        <select id="trackParcelId" required>
+    <option value="">Select Parcel ID</option>
+</select>
+
+        <button type="submit">Track</button>
+    </form>
+</div>
+
+<div class="table-container">
+    <h2>Tracking History</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Location</th>
+                <th>Status</th>
+                <th>Updated At</th>
+                <th>Remarks</th>
+            </tr>
+        </thead>
+        <tbody id="trackingTable"></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
